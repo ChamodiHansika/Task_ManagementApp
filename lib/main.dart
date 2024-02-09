@@ -1,9 +1,11 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:task_mangement_app/pages/home.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(
+  DevicePreview(
+      builder: (context)=> MyApp())
+);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
